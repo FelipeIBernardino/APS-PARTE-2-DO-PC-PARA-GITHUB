@@ -1,112 +1,92 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>continuação do HTML Coloquei o que aprendi na aula</title>
+    <title>Formulários</title>
 </head>
 
 <body>
-    <header>
+    <h1>Formulários</h1>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Informarçoes pessoias</legend>
+            <label for="nome">Nome:*</label>
+            <input type="text" id="nome" name="nome" placeholder="Escreva seu nome completo" required>
+            <br>
+            <label for="E-mail">E-mail:*</label>
+            <input type="email" id="E-mail" name="E-mail" value="@unifebe.edu.br">
+            <br>
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" id="senha">
+            <br>
+            <label for="Data Nascimento">Data Nascimento</label>
+            <input type="data" id="Data Nascimento" name="Data Nascimento">
+            <br>
+            <label for="Semana">Semana</label>
+            <input type="week" id="Semana" name="Semana">
+            <br>
+            <label for="Telefone">Telefone</label>
+            <input type="tel" id="Telefone" name="Telefone">
+            <br>
+            <label for="Cor Favorita">Cor Favorita</label>
+            <input type="color" id="Cor Favorita" name="Cor Favorita">
+            <br>
+            <label for="Número da Sorte">Número da Sorte</label>
+            <input type="number" id="Número da Sorte" name="Número da Sorte">
+            <br>
+            <h2>Genero</h2>
+            <input type="radio" id="masc" name="genero" value="Masculino">
+            <label for="masc">Masculino</label>
+            <input type="radio" id="fem" name="genero" value="Feminino">
+            <label for="fem">Feminino</label>
+            <input type="radio" id="Outro" name="genero" value="Outro">
+            <label for="Outro">Outro</label>
+        </fieldset>
+        <fieldset>
+            <legend>Endereço</legend>
+            <label for="Estado">Estado:</label>
+            <select name="Estado" id="Estado">
+                <optgroup label="SUl">
+                    <option value="SC">Santa Catarina</option>
+                    <option value="PR">Paraná</option>
+                    <option value="RS">Rio Grande do SUl</option>
+                </optgroup>
+                <Optgroup label="SUdeste">
+                    <option value="Sp" selected>Sao Paulo</option>
+                </Optgroup>
+            </select>
+        </fieldset>
+        <fieldset>
+            <Legend>Preferencias</Legend>
+           <h2>àrea de interesse</h2>
+           <input type="checkbox" id="tecnologia" name="tecnologia">
+           <label for="tecnologia">tecnologia</label>
 
-        <h1>Sistemas de informação</h1>
-        <p>blog desenvolvido pelos aulos</p>
-    </header>
-    <nav>
-        <a href="index.html"></a>
-        <a href="">sobre</a>
-        <a href="">contato</a>
+         <input type="checkbox" name="video-game" id="video-game">
+         <label for="video-game">video-game</label>
 
-    </nav>
-    <Main>
-        <section>
-            <h2>Últimas notícias</h2>
-        </section>
-        <article>
-            <h3>Os perigos da IA</h3>
-            <p><strong>Data de publicação:</strong>13 mar 2025 19:23</p>
-            <img src=https://i.ytimg.com/vi/h9sUYJSNpCk/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAoyS1fBL4Y_7DVUmEI66thpN6Kag
-                width="700px" height="500px" alt="">
-            <img src="" alt=""><button>Saiba mais</button>
-        </article>
-        <article>
-            <h3>O futuro do desenvolvimento web</h3>
-            <p><strong>Data de publicação:</strong> 13 mar 2025 19:33</p>
-            <figure>
-                <img src="assets/img/DW.jpg" alt="">
-                <figcaption>Desafios do DW</figcaption>
-            </figure>
-        </article>
-        <section>
-            <h2>Vìdeos</h2>
-        </section>
-        <article>
-            <h3>Vídeos</h3>
-            <video src="https://videos.rockstargames.com/v4/851s9eme/flv/en-us-1080p.mp4" width="800px" height="600px"
-                autoplay muted control>
-            </video>
-        </article>
-        <article>
-            <h3>Vídeos 3</h3>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/QdBZY2fkU-0?si=YibhIDXfOjooyB65"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+         <input type="checkbox" name="filme" id="filme">
+         <label for="filme">filme</label>
+         <br>
+         <label for="feedback">feedback</label>
+         <textarea name="feedback" id="feedback" cols="30" rows="10"></textarea>
+         <br>
+         <input type="text" list="browsers">
+         <datalist id="browsers">
+            <option value="Firefox"></option>
+            <option value="Chrome"></option>
+            <option value="Edge"></option>
+            <option value="Safari"></option>
+         </datalist>
+     
+        </fieldset>
 
-
-        </article>
-        <section>
-            <h2>tabelas</h2>
-            <table border="1">
-                <thead>
-                    <tr>
-                        <th>Linguagem</th>
-                        <th>2024</th>
-                        <th>2023</th>
-                        <th>2022</th>
-                    </tr>
-                </thead>
-
-                <tbody>
-                    <tr>
-                        <td>javascript</td>
-                        <td>1°</td>
-                        <td>2°</td>
-                        <td>3°</td>
-                    </tr>
-                    <tr>
-                        <td>C</td>
-                        <td>1°</td>
-                        <td>2°</td>
-                        <td>3°</td>
-                    </tr>
-                    <tr>
-                        <td>Go</td>
-                        <td>1°</td>
-                        <td>2°</td>
-                        <td>3°</td>
-                    </tr>
-                    <tr>
-                        <td>C+</td>
-                        <td>1°</td>
-                        <td>2°</td>
-                        <td>3°</td>
-                    </tr>
-                </tbody>
-            </table>
+        <input type="submit" value="Submeter fomr">
+        <input type="reset" value="Limpar form">
+    </form>
 
 
-
-            <!-- Exercicio w3 school-->
-            <!--criar tabela com cronograma semanal de vcs-->
-        </section>
-
-
-
-
-
-    </Main>
 </body>
-
-</html>

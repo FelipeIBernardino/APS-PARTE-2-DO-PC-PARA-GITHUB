@@ -3,4 +3,4 @@
 # Readme Perfil
 # Projeto e páginas HTML (Entregar o link do projeto)
 
-# Bônus: foi fazer um clone do um repositório meu para o meu pc
+# Bônus: foi fazer um clone de um repositório meu para o meu pc

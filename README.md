@@ -1,3 +1,4 @@
-# APS 
-# parte 2
-# Bônus foi que eu consegui criar um clone para meu computador do Github-PC
+# A1 APS Desevolvimento Web 1° parte
+# Criação da Conta (Entregar o link da conta)
+# Readme Perfil
+# Projeto e páginas HTML (Entregar o link do projeto)
